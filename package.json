@@ -12,6 +12,6 @@
   },
   "scripts": {
     "prestart": "echo 'Launching script'",
-    "start": "node mysteamclient.js"
+    "start": "node steam-cli.js"
   }
 }

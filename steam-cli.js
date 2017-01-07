@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const util = require('util');
-const testWithSteamWeb = require(__dirname + '/lib/testWithSteamWeb.js');
+const testWithSteamWeb = require(__dirname + '/lib/steam.js');
 
 var mySteamID = '76561198046029799';
 
