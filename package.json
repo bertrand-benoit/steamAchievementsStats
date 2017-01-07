@@ -7,7 +7,6 @@
     "async": "latest",
     "debug": "latest",
     "lodash": "latest",
-    "steam-api": "^1.1.3",
     "steam-web": "^0.4.0",
     "util": "latest"
   },
