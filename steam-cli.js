@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 const util = require('util');
-const testWithSteamWeb = require(__dirname + '/lib/steam.js');
+const myOwnSteamLib = require(__dirname + '/lib/steam.js');
 
 var mySteamID = '76561198046029799';
 
-testWithSteamWeb.showAllInterestingStats(mySteamID, function(error, result) {
+myOwnSteamLib.showAllInterestingStats(mySteamID, function(error, result) {
   if (error)
     return console.error(error);
 
