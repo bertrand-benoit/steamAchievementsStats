@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// Version 2.0.
+
 const util = require('util');
 const myOwnSteamLib = require(__dirname + '/lib/steam.js');
 
