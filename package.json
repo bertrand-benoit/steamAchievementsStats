@@ -8,11 +8,6 @@
     "debug": "latest",
     "lodash": "latest",
     "steam-web": "^0.4.0",
-    "util": "latest",
-    "cli": "latest"
-  },
-  "scripts": {
-    "prestart": "echo 'Launching script'",
-    "start": "node steamAchievementsStats.js"
+    "util": "latest"
   }
 }
