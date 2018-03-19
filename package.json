@@ -1,17 +1,18 @@
 {
-  "name" : "mySteamClient",
+  "name" : "steamAchievementStats",
   "version" : "0.0.1-beta",
-  "description" : "Tiny Steam client",
+  "description" : "Tiny Steam Achievements Statistics client",
   "private": true,
   "dependencies": {
     "async": "latest",
     "debug": "latest",
     "lodash": "latest",
     "steam-web": "^0.4.0",
-    "util": "latest"
+    "util": "latest",
+    "cli": "latest"
   },
   "scripts": {
     "prestart": "echo 'Launching script'",
-    "start": "node steam-cli.js"
+    "start": "node steamAchievementsStats.js"
   }
 }
