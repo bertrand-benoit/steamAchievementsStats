@@ -1,18 +1,24 @@
 #!/usr/bin/env node
-
-// Version 2.0.
+// Author: Bertrand BENOIT <contact@bertrand-benoit.net>
+// Version: 2.1
+// Description: computes achievement statistics and shows them order by interesting information.
+'use strict';
 
 const util = require('util');
-const myOwnSteamLib = require(__dirname + '/lib/steam.js');
+const steamLib = require(__dirname + '/lib/steam.js');
 
-var mySteamID = '76561198046029799';
+// N.B.: can't use 'cli' node module because it 'converts' Steam ID because they are too long ....
+//const cli = require('cli');
+// Parses the CLI directly.
+if (process.argv.length < 3) {
+  console.error('Usage: ', process.argv[1], ' <steam ID>');
+  process.exit(1);
+}
+var steamID = process.argv[2];
 
-myOwnSteamLib.showAllInterestingStats(mySteamID, function(error, result) {
+steamLib.showAllInterestingStats(steamID, function(error, result) {
   if (error)
     return console.error(error);
 
   console.log(util.inspect(result, false, null, true));
 });
-
-
-//http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=C281B1657755D9A5DD02D84608BCB6AB&steamid=76561198046029799&format=json&include_appinfo=1&include_played_free_games=1
