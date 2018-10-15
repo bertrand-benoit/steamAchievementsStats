@@ -1,7 +1,7 @@
 {
-  "name" : "steamAchievementStats",
-  "version" : "0.0.1-beta",
-  "description" : "Tiny Steam Achievements Statistics client",
+  "name": "steamAchievementStats",
+  "version": "0.9",
+  "description": "Tiny Steam Achievements Statistics client",
   "private": true,
   "dependencies": {
     "async": "latest",
