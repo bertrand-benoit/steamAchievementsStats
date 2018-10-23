@@ -20,6 +20,15 @@ You only have to launch this instruction the first time.
 npm install
 ```
 
+Configuration file
+==
+You can optionaly create the configuration file
+```
+~/.config/steamAchievementsStats/config.js
+```
+
+See **misc/config.sample.js** as sample.
+
 
 Usage
 ==
